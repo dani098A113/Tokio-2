@@ -13,16 +13,10 @@ def calcular_letra(promedio):
         return 'A'
     else:
         return 'Promedio fuera de rango'
-
-# Solicitar al usuario las 4 notas
 notas = []
 for i in range(1, 5):
     nota = float(input(f"Ingresa la nota {i}: "))
     notas.append(nota)
-
-# Calcular el promedio
 promedio = sum(notas) / 4
-
-# Obtener y mostrar la letra correspondiente
 letra = calcular_letra(promedio)
 print(f"Tu promedio es: {promedio}, lo que corresponde a la letra: {letra}")
